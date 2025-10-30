@@ -4,7 +4,6 @@ class Server {
     public static void main(String args[]) throws IOException
     {
         ServerSocket ss=new ServerSocket(499);
-        System.out.println("Server started. Waiting for client!");
         Socket s=ss.accept();
         System.out.println("Client connected");
         InputStreamReader in=new InputStreamReader(s.getInputStream());
@@ -15,6 +14,5 @@ class Server {
         pr.println("Hi, how can I help you?");
         s.close();
         ss.close();
-        System.out.println("Client closed!");
     }
 }
