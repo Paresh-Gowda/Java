@@ -1,0 +1,21 @@
+SQL> CREATE TABLE Employee(E_id NUMBER(10), E_name VARCHAR2(20));
+
+Table created.
+
+SQL> INSERT INTO Employee(E_id,E_name)VALUES(16,'Paresh');
+
+1 row created.
+
+SQL> DESC Employee
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ E_ID                                               NUMBER(10)
+ E_NAME                                             VARCHAR2(20)
+
+SQL> SELECT * FROM Employee;
+
+      E_ID E_NAME                                                               
+---------- --------------------                                                 
+        16 Paresh                                                               
+
+SQL> SPOOL OFF;
