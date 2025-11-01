@@ -21,7 +21,7 @@ class Calculator {
                      break;
             case 5 : System.out.println("Modulo Division="+(a%b));
                      break;
-            default : System.out.println("Invalid Choice");
+            default : System.out.println("Invalid Choice!");
         }
         in.close();
     }
