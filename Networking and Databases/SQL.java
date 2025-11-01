@@ -1,26 +1,26 @@
 import java.sql.*;
-public class JDBC {
+import java.sql.DriverManager;
+class SQL {
     public static void main(String args[]) throws SQLException
     {
-        Connection con=null;
         String driver="oracle.jdbc.driver.OracleDriver";
-        try 
+        try
         {
             Class.forName(driver);
-            System.out.println("Drive loaded");
+            System.out.println("Driver loaded");
             String url="jdbc:oracle:thin:@Lenovo-Ideapad:1521:XE";
             String user="system";
             String pwd="201983";
-            con=DriverManager.getConnection(url,user,pwd);
+            Connection con=DriverManager.getConnection(url,user,pwd);
             System.out.println("Connected to Database");
-            if(con!=null) 
-            {
-                con.isClosed();
-            }
+            Statement st=con.createStatement();
+            String q="CREATE TABLE Student(S_id NUMBER(10))";
+            st.executeQuery(q);
+            System.out.println("Query executed");
         }
         catch(ClassNotFoundException e)
         {
-            System.out.println("Exception has occured!");
+            System.out.println("Exception raised!");
         }
     }
 }
