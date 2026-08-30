@@ -15,3 +15,19 @@ I also practiced integrating basic networking and database operations to strengt
 This repository showcases my growth from learning Java fundamentals to mastering advanced programming concepts.
 It serves as both a personal reference and a resource for others beginning their Java journey.
 My next milestone is to learn Spring Framework, where I’ll dive into building full-fledged applications with modern Java tools and frameworks.
+
+## 📂 Repository Structure
+
+```
+Java/
+│
+├── Java Fundamentals/
+├── Object Oriented Programming/
+├── Advanced Object Oriented Concepts/
+├── Error Handling and File Management/
+├── GUI Development/
+├── Multithreading/
+├── Networking and Databases/
+│
+└── README.md
+```
